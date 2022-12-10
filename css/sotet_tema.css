@@ -1,0 +1,221 @@
+/**todo ======================================================
+
+  *todo             Téma szín változása:   
+
+  *todo ======================================================*/
+
+.dark section {
+    color: #f0f2f8;
+}
+
+/**===== első szekció =====*/
+/* #region első szekció  */
+.dark #rocketPlanner_cim {
+    /* color: #279dfe !important; */
+    background-image: linear-gradient(to right bottom, #1474e2, #0080e9, #008bef, #0097f4, #05a2f9, #28acfb, #3eb6fd, #51bffe, #6ac9fe, #81d2fe, #97dcfe, #ace5ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.tema_valtas {
+    position: fixed;
+    right: 0rem;
+    top: 4.5rem;
+    height: 1.5rem;
+    width: 2.5rem;
+    cursor: pointer;
+    border-radius: 1rem;
+    background: #293047;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+}
+
+.tema_valtas.active {
+    top: 8.6rem;
+}
+
+.dark .bar {
+    background-color: #dde4e8 !important;
+}
+
+/** telefon nézet menüje balról jobbra jelenik meg  */
+@media(max-width:768px) {
+
+    .dark #nav_menu {
+        background: #23262e !important;
+        box-shadow: none;
+    }
+}
+
+.nap {
+    position: absolute;
+    font-size: 0.8rem;
+    cursor: pointer;
+    color: #F4D740;
+    margin-left: 50%;
+    visibility: hidden;
+}
+
+.hold {
+    visibility: visible;
+    position: absolute;
+    cursor: pointer;
+    color: #dde4e8;
+    font-size: 0.8rem;
+    margin-left: 0.3rem;
+}
+
+.dark .tema_valtas {
+    background: #23262e;
+}
+
+.dark .nap {
+    visibility: visible;
+}
+
+.dark .hold {
+    visibility: hidden;
+}
+
+.dark {
+    transition: 0.3s;
+    background: #101214 !important;
+}
+
+.dark .nyil_le {
+    color: #2b6fd6 !important;
+}
+
+.dark #nav {
+    background: #101214;
+}
+
+.dark .nav_link {
+    color: #f0f2f7;
+    font-weight: lighter !important;
+}
+
+.dark .nav_szinvaltozas {
+    background: #14171a !important;
+    box-shadow: 0px 1px 0px #24292e;
+}
+
+.dark #webfejlesztes_cim {
+    background: -webkit-linear-gradient(-90deg, #256fdf, #279dfe, #1a2c47, #101214);
+    -webkit-background-clip: text;
+    background-clip: text;
+
+}
+
+/* #endregion */
+
+/**===== második szekció =====*/
+/* #region  második szekció */
+.dark .rolam_leiras {
+    color: #f0f2f8;
+}
+
+.dark #rolam_cim,
+.dark #ismeretek_cim,
+.dark .kategoria_cim {
+    color: #dcedff;
+    text-shadow: #0c76ff 1px 1px 10px;
+}
+
+.dark .bx-cube {
+    text-shadow: none;
+}
+
+.dark .kategoriak {
+    background-image: linear-gradient(to bottom, #101214, #111315, #121417, #131518, #141619, #151719, #15171a, #16181a, #16181b, #16191b, #17191c, #17191c);
+    box-shadow: none;
+}
+
+.dark .felsorol {
+    color: #f0f2f8;
+}
+
+/* #endregion */
+
+/**===== harmadik szekció =====*/
+/* #region  harmadik szekció */
+.dark #harmadik_szekcio {
+    background: #101214;
+}
+
+.dark #projektek_div .projekt_box {
+    background-color: #17191C;
+    box-shadow: none;
+}
+
+.dark #projektek_cim,
+.dark #projektek_div .projektcim {
+    color: #dcedff;
+    text-shadow: #0c76ff 1px 1px 10px;
+}
+
+/* #endregion */
+
+/**===== negyedik szekció =====*/
+/* #region negyedik szekció  */
+.dark #kapcsolat_szekcio {
+    background-size: 40px 40px;
+    background-image: radial-gradient(circle, #393d41 1px, rgba(0, 0, 0, 0) 1px);
+}
+
+.dark .bxl-github {
+    color: #44AAFE !important;
+}
+
+.dark .linkedin {
+    color: #38B4F7 !important;
+}
+
+.dark .mail {
+    color: #279dfe !important;
+}
+
+/** #region üzenetküldés ablak */
+
+.dark #felugro_ablak_tartalom {
+    background: #191c20;
+    box-shadow: none;
+}
+
+.dark #uzenetkuldes_cim {
+    color: #cae3ff;
+    text-shadow: #0c76ff 1px 1px 10px;
+}
+
+.dark #uzenetkuldes_form>input,
+.dark textarea {
+    box-shadow: none;
+    background: #292c33;
+    color: #d8e2ec;
+}
+
+.dark #uzenetkuldes_form>input::placeholder,
+.dark textarea::placeholder {
+    background: #292c33;
+}
+
+.dark #uzenetkuldes_form>input:focus,
+.dark textarea:focus {
+    background: #2d3038;
+    color: #cae3ff;
+    text-shadow: #0c76ff 1px 1px 10px;
+}
+
+.dark #bt_kuldes {
+    background-color: #3975ce;
+}
+
+.dark #felugro_ablak_tartalom #vissza {
+    color: #cae3ff;
+}
+/* #endregion */
+
+/* #endregion */
