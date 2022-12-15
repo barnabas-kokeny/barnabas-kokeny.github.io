@@ -29,9 +29,9 @@
     transition-duration: 0.5s;
 }
 
+/**=============== Felnyíl ===============*/
 /* ======  ez szügseges ahhoz, hogy a fel nyíl jobb oldalt alul jelenjen meg a színés kövonallal:  ======= */
 #felnyil_div {
-    /* border: solid red 1px; */
     position: fixed;
     /* ez szabály fog érvényesülni a gyerek elemnél => "#fel_nyil" : */
     bottom: 40px;
@@ -49,7 +49,6 @@
 
 #fel_nyil::before {
     content: "";
-    /*background-image: linear-gradient(to right, #3cb4ff, #2babff, #1ea2ff, #1a98ff, #248eff, #8685ff, #c279f6, #f169e1, #ff67ac, #ff8c73, #ffc042, #fff33c); */
     background-image: linear-gradient(to right, #9deaff, #78daff, #52c9ff, #29b7ff, #00a4ff, #0096ff, #0087ff, #0076ff, #0067ff, #0055ff, #1240ff, #3520fd);
     position: absolute;
     z-index: -1;
@@ -62,7 +61,6 @@
 
 #fel_nyil::after {
     content: "";
-    /*background-image: linear-gradient(to right, #3cb4ff, #2babff, #1ea2ff, #1a98ff, #248eff, #8685ff, #c279f6, #f169e1, #ff67ac, #ff8c73, #ffc042, #fff33c);*/
     background-image: linear-gradient(to right, #9deaff, #78daff, #52c9ff, #29b7ff, #00a4ff, #0096ff, #0087ff, #0076ff, #0067ff, #0055ff, #1240ff, #3520fd);
     position: absolute;
     z-index: -2;

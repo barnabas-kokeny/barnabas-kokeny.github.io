@@ -67,7 +67,7 @@ sr.reveal('.tech_elem_cimek', {
     origin: 'bottom',
     distance: '300%',
     duration: 700,
-    delay: 1800,
+    delay: 1200,
     reset: false,
     interval: 300,
     easing: 'ease-out',

@@ -12,4 +12,5 @@
     --logo_szin: #3d4044;
     --fejlec_magassag: 60px;
     --kezdo_oldal_szoveges_resze_magassag: calc(100vh - var(--fejlec_magassag));
+    --tovabb_gomb: calc(100% / 1.618);
 }

@@ -83,31 +83,24 @@ body::-webkit-scrollbar-thumb:hover {
 
 /* #region  ELSŐ SZEKCIÓ */
 #elso_szekcio {
-    /* border: 1px solid #1ce93e; */
     padding: 2rem 1rem 2rem 1rem;
     display: flex;
     flex-direction: column;
     gap: 0.8rem;
     height: 100vh;
     position: relative;
-    background-size: 280px 200px;
-    background-image:
-        linear-gradient(to right, #e2e2ee 1px, transparent 1px),
-        linear-gradient(to bottom, #e2e2ee 1px, transparent 1px);
 }
 
 
 /**=============== CÍM ===============*/
 /* #region  CÍM */
 #rocket_planner_cim {
-    /* border: 1px solid #1ce93e; */
     letter-spacing: 2px;
     font-size: 5.5vmin;
     margin-bottom: 5px;
 }
 
 #rocket_planner_cim_kek {
-    /* border: 1px solid #1c53e9; */
     color: #0876cf;
     font-size: 5.5vmin;
 }
@@ -117,7 +110,6 @@ body::-webkit-scrollbar-thumb:hover {
 /**=============== ÁTTEKINTÉS CÍM ÉS SZÖVEG ===============*/
 /* #region  ÁTTEKINTÉS CÍM ÉS SZÖVEG */
 #attekintes_cim_es_szoveg {
-    /* border: 1px solid #e91c1c; */
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -127,7 +119,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 #attekintes_cim {
     font-size: 4.6vmin;
-    /* border: 1px solid #2f6ffa; */
+    color: #0876cf;
 }
 
 #attekintes_szoveg {
@@ -145,17 +137,16 @@ body::-webkit-scrollbar-thumb:hover {
 /**=============== TOVÁBB LINK ===============*/
 /* #region  TOVÁBB LINK */
 #tovabb_link {
-    /* border: 1px solid #30a9fa; */
     font-size: 0.7rem;
     text-decoration: none;
     color: var(--vilagos_betu_szin);
     width: calc(100% / 1.618);
     padding: 7px 0px 7px;
     text-align: center;
-    border-radius: 0px 10px 10px 10px;
+    border-radius: 10px;
     margin-top: 20px;
-    background: #0876cf;
-    /* transition: all 2s; */
+    background-image: linear-gradient(to left, #9626dc, #8538df, #7444e1, #624de2, #4e54e1, #3d5fe5, #2a68e8, #0e71ea, #007ff0, #008df4, #0c9af8, #2ba7fa);
+
 }
 
 /* #endregion */
@@ -168,7 +159,6 @@ section {
 }
 
 .nyil_ikon_kozep {
-    /* border: 2px solid rgb(36, 144, 216); */
     width: 100%;
     position: absolute;
     bottom: 0;
@@ -179,7 +169,6 @@ section {
 }
 
 a>.nyil_le {
-    /* border: 1px solid green; */
     text-decoration: none;
     color: #5d6268;
     font-size: 30px;
@@ -189,7 +178,6 @@ a>.nyil_le {
 #elso_szekcio .nyil_ikon_kozep {
     margin-top: auto;
     margin-bottom: auto;
-    /* border: 2px solid rgb(36, 144, 216); */
     text-align: center;
     z-index: 1;
     width: 100%;
@@ -245,7 +233,6 @@ a>.nyil_le {
     display: flex;
     flex-direction: column;
     gap: 3rem;
-    /* border: 1px solid #3054f3; */
     background-image: linear-gradient(to bottom, #1295ff,
             #339eff,
             #48a7ff,
@@ -261,36 +248,14 @@ a>.nyil_le {
             #f0f2f7 15%);
 }
 
-/**===============  LAPTOP ÉS TELEFON KÉP ===============*/
-/* #region  LAPTOP ÉS TELEFON KÉP */
-
-#telefonLaptop_kep {
-    height: 80vmin;
-    width: 85vmin;
-    background: url('../../image/laptop_telefon.png') no-repeat;
-    background-position: center;
-    background-size: contain;
-    margin: 5rem auto 0;
-    filter: drop-shadow(0 20px 8px #15161a);
-    transition-duration: 1s;
-}
-
-#telefonLaptop_kep:hover {
-    scale: 1.02;
-    transition-duration: 1s;
-    transform: translateY(-20px);
-    filter: drop-shadow(0px 40px 10px #2a2b33);
-}
-
-/* #endregion */
 
 /**===============  MEGJELENÉS CÍM ÉS TARTALOM ===============*/
 /* #region  MEGJELENÉS CÍM ÉS TARTALOM */
 #megjelenes_cim_tartalom {
+    margin-top: 7rem;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    /* background: #0e7cd688; */
 }
 
 #megjelenes_cim {
@@ -300,8 +265,6 @@ a>.nyil_le {
     height: fit-content;
     width: fit-content;
     align-items: center;
-    /* border: 1px solid #304df1; */
-
 }
 
 .bxs-square-rounded {
@@ -309,6 +272,28 @@ a>.nyil_le {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+/* #endregion */
+
+/**===============  LAPTOP ÉS TELEFON KÉP ===============*/
+/* #region  LAPTOP ÉS TELEFON KÉP */
+
+#telefonLaptop_kep {
+    height: 80vmin;
+    width: 85vmin;
+    background: url('../../image/laptop_telefon.png') no-repeat;
+    background-position: center;
+    background-size: contain;
+    filter: drop-shadow(0 20px 8px #15161a);
+    transition-duration: 1s;
+}
+
+#telefonLaptop_kep:hover {
+    scale: 1.02;
+    transition-duration: 1s;
+    transform: translateY(-20px);
+    filter: drop-shadow(0px 40px 10px #2a2b33);
 }
 
 /* #endregion */
@@ -384,7 +369,6 @@ a>.nyil_le {
 
 /* #region harmadik szekció:  */
 #harmadik_szekcio {
-    /* border: 1px solid #1ce93e; */
     padding: 2rem 1rem 8rem 1rem;
     display: flex;
     flex-direction: column;
@@ -393,7 +377,6 @@ a>.nyil_le {
 }
 
 #funkciok_felsorolasa {
-    /* border: 2px solid #1ce93e; */
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -401,7 +384,6 @@ a>.nyil_le {
 }
 
 #funkciok_cim {
-    /* border: 1px solid #304df1; */
     font-size: 5.5vmin;
     font-weight: bold;
     display: flex;
@@ -483,7 +465,6 @@ a>.nyil_le {
 
 /* #region negyedik szekció:  */
 #negyedik_szekcio {
-    /* border: 1px solid #1ce93e; */
     padding: 2rem 1rem 8rem 1rem;
     display: flex;
     flex-direction: column;
@@ -499,7 +480,6 @@ a>.nyil_le {
 }
 
 #alk_tech_cim {
-    /* border: 1px solid #304df1; */
     font-size: 5.5vmin;
     font-weight: bold;
     display: flex;
@@ -511,17 +491,14 @@ a>.nyil_le {
     font-size: 5.3vmin;
     font-weight: bold;
     color: #2b2f35;
-    /* border: 1px solid #e91c1c; */
     display: flex;
     height: fit-content;
     align-items: center;
     height: fit-content;
     width: 100%;
-    /* width: fit-content; */
 }
 
 #tech_felsorolas_div {
-    /* background: #0876cf27; */
     height: fit-content;
     display: flex;
     flex-direction: column;
@@ -530,7 +507,6 @@ a>.nyil_le {
 }
 
 #tech_felsorolas_div .egyeni_ikon {
-    /* border: 1px solid #11b43a; */
     margin: 0.1rem;
     width: 5.3vmin;
     height: 5.3vmin;
@@ -541,7 +517,6 @@ a>.nyil_le {
 /**===== footer =====*/
 /* #region  footer */
 #footer {
-    /* border: 1px solid #e91c1c; */
     font-size: 0.6rem;
     padding: 7px;
     width: 100%;
@@ -617,12 +592,6 @@ a>.nyil_le {
         flex-direction: row;
         gap: 0rem;
         padding: 5rem 3rem 5rem 3rem;
-
-
-        background-size: 700px 400px;
-        background-image:
-            linear-gradient(-90deg, #d7d7e4 1.5px, transparent 1px),
-            linear-gradient(180deg, #d7d7e4 1.5px, transparent 1px);
     }
 
     #projekt_cim {
@@ -645,46 +614,22 @@ a>.nyil_le {
         line-height: 3.4vmin;
     }
 
-
-
     #elso_szekcio #tovabb_link {
         position: absolute;
         bottom: 250px;
-        /* transform: translateY(-250px); */
         margin-left: 0px;
         font-size: 20px;
         padding: 8px 40px 8px;
-        border-radius: 5px 15px 15px 15px;
-        z-index: 1;
-        cursor: pointer;
-        width: auto;
-        overflow: hidden;
-        background: #0876cf;
-        border: #2b6fd6 1px solid;
-        color: var(--vilagos_betu_szin);
-    }
-
-    #elso_szekcio #tovabb_link::before {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        background: var(--vilagos_betu_szin);
-        transition: all 0.8s;
-        z-index: -1;
-        transform: translateX(-100%);
-    }
-
-    #elso_szekcio #tovabb_link:hover::before {
-        transform: translateX(0);
+        border-radius: 15px;
+        width: fit-content;
     }
 
     #elso_szekcio #tovabb_link:hover {
-        color: var(--betuszin) !important;
-        font-weight: lighter;
-        transition: all 0.8s;
+        transition: 0.8s;
+        /* transform: translateX(0.3rem); */
+        box-shadow: inset 100rem 0 #256ae9;
+        
+
     }
 
     #elso_szekcio .nyil_ikon_kozep {
@@ -710,7 +655,7 @@ a>.nyil_le {
     }
 
     #telefonLaptop_kep {
-        margin: 5rem auto 0; 
+        margin: 0 auto 4rem;
     }
 
     #megjelenes_cim_tartalom {
@@ -720,11 +665,9 @@ a>.nyil_le {
 
     #megjelenes_cim {
         font-size: 4vmin;
-        /* width: 50%; */
     }
 
     #responziv_design_div {
-        /*width: 60%;*/
         gap: 1rem;
     }
 
@@ -805,10 +748,11 @@ a>.nyil_le {
 
     /**===== második szekció: =====*/
     #masodik_szekcio {
-        gap: 8rem;
+        gap: 10rem;
     }
 
     #megjelenes_cim_tartalom {
+        margin-top: 13rem;
         gap: 15rem;
     }
 
@@ -898,6 +842,7 @@ a>.nyil_le {
     }
 
     #megjelenes_cim_tartalom {
+        margin-top: 12rem;
         gap: 20rem;
     }
 
