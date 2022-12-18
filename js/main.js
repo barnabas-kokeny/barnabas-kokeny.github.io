@@ -168,11 +168,19 @@ const emailjs_items = {
     publicKey: "h5QAmvfSLThNvxXYt",
 };
 
-const sendEmail = (e) => {
-    e.preventDefault()
+//* regex email validáláshoz
+const email_formatum = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
-    //* leellenőrzés, hogy üres-e valamelyik mező
+kuldesElemek.uzenetkuldes_form.addEventListener("submit", (e) => {
+
+    e.preventDefault();
+
+    //*  üres mező ellenőrzése
     if (kuldesElemek.user_name.value === '' || kuldesElemek.email.value === '' || kuldesElemek.message.value === '') {
+
+        //* Az előző üzenet eltávolítása
+        kuldesElemek.kuldes_visszajelzes.textContent = '';
+        kuldesElemek.kuldes_visszajelzes.classList.remove('sikeres_uzenet');
 
         //* szín hozzáadása és üzenet kiírása
         kuldes_visszajelzes.classList.add('hiba_uzenet');
@@ -186,11 +194,42 @@ const sendEmail = (e) => {
 
         }, 5000)
 
+        return false;
+
+    }
+
+    //* Email formátum ellenőrzése
+    //ha minden beviteli mezőbe írva van és az email cím nem egyezik a regex-es 'email_formatum' -al.
+    if (!(kuldesElemek.email.value.match(email_formatum)) && !(kuldesElemek.user_name.value === '' && kuldesElemek.email.value === '' && kuldesElemek.message.value === '')) {
+
+        //* Az előző üzenet eltávolítása
+        kuldesElemek.kuldes_visszajelzes.textContent = '';
+        kuldesElemek.kuldes_visszajelzes.classList.remove('sikeres_uzenet');
+
+        //* szín hozzáadása és üzenet kiírása
+        kuldes_visszajelzes.classList.add('hiba_uzenet');
+        kuldesElemek.kuldes_visszajelzes.textContent = 'Az email cím helytelen!😾'
+
+        //*üzenet törlése 5s után
+        setTimeout(() => {
+
+            kuldesElemek.kuldes_visszajelzes.textContent = '';
+            kuldesElemek.kuldes_visszajelzes.classList.remove('hiba_uzenet')
+
+        }, 5000)
+
+        return false;
+
     } else {
 
         //* serviceID - templateID - #form - publicKey
         emailjs.sendForm(emailjs_items.serviceID, emailjs_items.templateID, emailjs_items.form, emailjs_items.publicKey)
             .then(() => {
+
+                //* Az előző üzenet eltávolítása
+                kuldesElemek.kuldes_visszajelzes.textContent = '';
+                kuldesElemek.kuldes_visszajelzes.classList.remove('hiba_uzenet')
+
                 //* Üzenet mutatása és szín hozzáadása
                 kuldesElemek.kuldes_visszajelzes.classList.add('sikeres_uzenet')
                 kuldesElemek.kuldes_visszajelzes.textContent = 'Üzenet sikeresen elküldve!😸'
@@ -210,9 +249,10 @@ const sendEmail = (e) => {
         kuldesElemek.message.value = '';
 
     }
-}
 
-kuldesElemek.uzenetkuldes_form.addEventListener('submit', sendEmail)
+
+
+})
 
 /* #endregion */
 

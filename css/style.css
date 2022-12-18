@@ -78,13 +78,11 @@ body {
 /**=============== nyíl le ===============*/
 /* #region  NYÍL IKON */
 section {
-    /* border: 1px solid rgb(231, 38, 38); */
     position: relative;
 }
 
 .ikon_kozep {
 
-    /* border: 2px solid rgb(36, 144, 216); */
     width: 100%;
     position: absolute;
     bottom: 0;
@@ -94,7 +92,6 @@ section {
 }
 
 a>.nyil_le {
-    /* border: 1px solid green; */
     text-decoration: none;
     color: #7c7891;
     font-size: 30px;
@@ -102,7 +99,6 @@ a>.nyil_le {
 }
 
 #kezdo_oldal .ikon_kozep {
-    /* border: 2px solid rgb(36, 144, 216); */
     text-align: center;
     z-index: 1;
     width: 100%;
@@ -127,7 +123,6 @@ a>.nyil_le {
     justify-content: center;
     align-items: center;
     height: var(--kezdo_oldal_szoveges_resze_magassag);
-    /* border: 1px solid rgb(245, 33, 33); */
     height: 100vh;
 }
 
@@ -146,7 +141,6 @@ a>.nyil_le {
 
 /**=============== webfejlesztés cím ===============*/
 #webfejlesztes_cim {
-    /* border: 1px solid rgb(33, 245, 44); */
     font-family: var(--cim_betutipus) !important;
     background: -webkit-linear-gradient(-90deg, #124fac, #4d8ef0, #d9e8ff, #f0f2f7);
     -webkit-background-clip: text;
@@ -162,7 +156,6 @@ a>.nyil_le {
 
 /**=============== üdvözlés napszak szerint ===============*/
 #udvozles_napszak {
-    /* border: 1px solid rgb(26, 138, 243); */
     font-size: 7vmin;
     font-weight: bold;
 
@@ -170,14 +163,12 @@ a>.nyil_le {
 
 /**=============== üdvözlés ===============*/
 #udvozles {
-    /* border: 1px solid rgb(126, 27, 255); */
     font-size: 4.5vmin;
     font-weight: bold;
 }
 
 /**=============== rövid bemutatkozás ===============*/
 #rovid_bemutatkozas {
-    /*  border: 1px solid rgb(31, 187, 235); */
     font-size: 3vmin;
 }
 
@@ -198,15 +189,12 @@ a>.nyil_le {
 
 #masodik_szekcio {
     padding: calc(var(--fejlec_magassag)*1.5) 30px;
-    /* background: #0075e918; */
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    /*height: 100vh;*/
 }
 
 #masodik_szekcio_kozep {
-    /*border: 2px solid rgb(24, 70, 197);*/
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -216,7 +204,6 @@ a>.nyil_le {
 }
 
 #rolam_cim {
-    /* border: 1px solid #1c9ee9;*/
     font-size: 5.5vmin;
     font-weight: bold;
     width: 100%;
@@ -234,7 +221,6 @@ a>.nyil_le {
 #rolam_leiras {
     font-size: 3.2vmin;
     line-height: 5vmin;
-    /* border: 1px solid #e93b1c; */
     width: 100%;
     text-align: justify;
     text-justify: inter-word;
@@ -248,7 +234,6 @@ a>.nyil_le {
 /** ======== ismeretek ======== */
 /* #region  ismeretek */
 #ismeretek_cim {
-    /* border: 1px solid #1b9bf0; */
     font-size: 4.5vmin;
     font-weight: bold;
     width: 100%;
@@ -256,7 +241,6 @@ a>.nyil_le {
 }
 
 #ismeretek_div {
-    /* background: #64f5212a; */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 0.8rem;
@@ -275,7 +259,6 @@ a>.nyil_le {
 }
 
 .kategoria_cim {
-    /* border: 1px solid #f82929; */
     font-size: 4vmin;
     font-weight: bold;
     text-align: center;
@@ -283,7 +266,6 @@ a>.nyil_le {
 }
 
 .felsorol_div {
-    /*background: #ff00001f;*/
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 0.7rem;
@@ -291,7 +273,6 @@ a>.nyil_le {
 }
 
 .felsorol {
-    /*border: 1px solid #11b43a;*/
     font-size: 3vmin;
     display: flex;
     flex-direction: column;
@@ -302,11 +283,9 @@ a>.nyil_le {
 
 .felsorol_ikon {
     font-size: 2rem;
-    /* border: 1px solid #11b43a; */
 }
 
 .egyeni_ikon {
-    /* border: 1px solid #11b43a; */
     margin: 0.1rem;
     width: 2rem;
     height: 2rem;
@@ -326,12 +305,10 @@ a>.nyil_le {
 
 /* #region harmadik szekció  */
 #harmadik_szekcio {
-    /* border: 1px solid #1ce93e; */
     background: #f0f2f7;
     display: block;
     padding: calc(var(--fejlec_magassag)*1.5) 30px;
     height: 100vh;
-    /* height: fit-content; */
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -346,7 +323,6 @@ a>.nyil_le {
 }
 
 #projektek_cim {
-    /* border: 1px solid #1ce93e; */
     font-size: 5.5vmin;
     font-weight: bold;
     width: 100%;
@@ -355,7 +331,6 @@ a>.nyil_le {
 }
 
 #projektek_div {
-    /* background: #54f01754; */
     width: 100%;
     height: 100%;
     display: flex;
@@ -365,18 +340,10 @@ a>.nyil_le {
     flex-wrap: wrap;
 }
 
-/*
-#projektek_div .projekt_box:nth-child(odd) {
-    background: #2db6f5;
-    justify-self: flex-start;
-}
-
-*/
 
 /** ======== projekt box ======== */
 /* #region  projekt box */
 #projektek_div .projekt_box {
-    /* border: #0073e9 1px solid; */
     background: white;
     box-shadow: 0 0 5px #c8ccd8;
     border-radius: 15px;
@@ -390,18 +357,15 @@ a>.nyil_le {
     flex-direction: column;
     gap: 0.3rem;
     padding: 1rem 1rem 1.3rem;
-    /* border: #00e900 1px solid; */
 }
 
 #projektek_div .projekt_kep {
     background-image: url('../image/kiadas_tervezo.png');
-    /* background-color: #1A1A1A; */
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
     height: 10rem;
     width: 100%;
-    /* border: #50ff24 1px solid; */
 }
 
 #projektek_div #kiad_kez_kep {
@@ -413,16 +377,13 @@ a>.nyil_le {
 }
 
 #projektek_div .projektcim {
-    /* font-size: 0.9rem; */
     font-size: 4.2vmin;
     font-weight: bold;
-    /* border: #0073e9 1px solid; */
     width: fit-content;
 }
 
 #projektek_div .projekt_leiras {
     font-size: 3.3vmin;
-    /* border: #2d67b4 1px solid;*/
     width: 70%;
 }
 
@@ -431,7 +392,6 @@ a>.nyil_le {
 /** ======== projekt link ======== */
 /* #region  projekt link */
 #projektek_div #projekt_linkek {
-    /* border: #36e44e 1px solid; */
     display: flex;
     justify-content: space-between;
 }
@@ -466,7 +426,6 @@ a>.nyil_le {
 
 /* #region  negyedik szekció  */
 #kapcsolat_szekcio {
-    /* border: 1px solid #e91c1c; */
     position: relative;
     padding: 0 0;
     height: 100vh;
@@ -481,7 +440,6 @@ a>.nyil_le {
 
 #kapcsolat_cim {
     font-size: 2rem;
-    /* border: 1px solid #47fa41; */
     letter-spacing: 0.5rem;
 }
 
@@ -491,7 +449,6 @@ a>.nyil_le {
     width: fit-content;
     font-size: 2.3rem;
     gap: 2rem;
-    /* border: 1px solid #47fa41;  */
 }
 
 .linkedin {
@@ -510,7 +467,6 @@ a>.nyil_le {
 }
 
 #footer {
-    /* border: 1px solid #e91c1c; */
     font-size: 0.6rem;
     padding: 7px;
     width: 100%;
@@ -547,7 +503,6 @@ a>.nyil_le {
 
 
 #felugro_ablak_tartalom {
-    /* border: 1px solid rgb(0, 255, 0); */
     background: white;
     display: flex;
     flex-direction: column;
@@ -579,7 +534,6 @@ a>.nyil_le {
 }
 
 #uzenetkuldes_form {
-    /* border: 1px solid red; */
     gap: 20px;
     width: 100%;
     height: 100%;
@@ -590,7 +544,6 @@ a>.nyil_le {
 }
 
 #felugro_ablak_tartalom #vissza {
-    /* border: 1px solid red; */
     width: auto;
     display: flex;
     justify-content: flex-end;
@@ -605,7 +558,6 @@ a>.nyil_le {
 }
 
 #uzenetkuldes_cim {
-    /* border: 1px solid red; */
     color: #3e3e44;
     width: 100%;
     text-align: center;
@@ -889,7 +841,6 @@ textarea:focus {
     }
 
     #rovid_bemutatkozas {
-        /*  border: 1px solid rgb(31, 187, 235); */
         font-size: 2.5vmin;
     }
 
@@ -902,7 +853,6 @@ textarea:focus {
 
     #masodik_szekcio_kozep {
         gap: 2rem;
-        /* border: 1px solid #34e91c; */
     }
 
     #rolam_leiras {
