@@ -1,0 +1,919 @@
+@import url('../root.css');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: text;
+    font-family: var(--normal_betutipus);
+}
+
+*::selection {
+    color: white;
+    background-color: #5bbdff;
+    text-shadow: #23262e 0px 0px 1px;
+}
+
+html {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+body {
+
+    color: var(--betuszin);
+    background: var(--vilagos_betu_szin);
+    position: relative;
+    overflow-x: hidden;
+    transition: 0.3s;
+}
+
+/*** =============================   SCROLLBAR   =========================*/
+/* #region  SCROLLBAR */
+body::-webkit-scrollbar {
+    width: 0.3rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--vilagos_betu_szin);
+    width: 0.3em;
+}
+
+body::-webkit-scrollbar-thumb {
+    width: 0.3rem;
+    background: #23262e;
+    border-radius: 100px;
+
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: #2e313b;
+    width: 0.4rem;
+    border-radius: 100px;
+}
+
+/* #endregion */
+
+
+/*** =============================   BETÖLTÉS   =========================*/
+/* #region  BETÖLTÉS */
+#betoltes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    z-index: 100;
+    background: var(--vilagos_betu_szin);
+}
+
+.bx-loader-alt {
+    font-size: 50px;
+    color: #4d555e;
+}
+
+/* #endregion */
+
+/**=============== nyíl le ===============*/
+/* #region  lefele nyíl ikon */
+
+section {
+    position: relative;
+}
+
+.nyil_ikon_kozep {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 50px;
+    left: 0;
+    text-align: center;
+    /* background-color: #0057ea; */
+
+}
+
+a>.nyil_le {
+    text-decoration: none;
+    color: #5d6268;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+#elso_szekcio .nyil_ikon_kozep {
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+    z-index: 1;
+    width: 100%;
+
+}
+
+#elso_szekcio a>.nyil_le {
+    color: #2a3036;
+
+}
+
+/* #endregion */
+
+
+/*** ======================================================
+
+  **                  első szekció:   
+
+  ** ======================================================*/
+
+/* #region  ELSŐ SZEKCIÓ */
+#elso_szekcio {
+    padding: 2rem 1rem 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    height: 100vh;
+    position: relative;
+}
+
+
+/**=============== CÍM ===============*/
+/* #region  CÍM */
+#rocket_planner_cim {
+    letter-spacing: 2px;
+    font-size: 5.5vmin;
+    margin-bottom: 5px;
+}
+
+#rocket_planner_cim_kek {
+    color: #0876cf;
+    font-size: 5.5vmin;
+}
+
+/* #endregion */
+
+/**=============== ÁTTEKINTÉS CÍM ÉS SZÖVEG ===============*/
+/* #region  ÁTTEKINTÉS CÍM ÉS SZÖVEG */
+#attekintes_cim_es_szoveg {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    z-index: 1;
+}
+
+#attekintes_cim {
+    font-size: 4.6vmin;
+    color: #0876cf;
+}
+
+#attekintes_szoveg {
+    /* border: 1px solid #3fec48; */
+    font-size: 3.4vmin;
+    line-height: 5vmin;
+    width: 100%;
+    text-align: justify;
+    text-justify: inter-word;
+
+}
+
+/* #endregion */
+
+/**=============== TOVÁBB LINK ===============*/
+/* #region  TOVÁBB LINK */
+#tovabb_link {
+    font-size: 0.7rem;
+    text-decoration: none;
+    color: var(--vilagos_betu_szin);
+    width: calc(100% / 1.618);
+    padding: 7px 0px 7px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 20px;
+    background-image: linear-gradient(to left, #9626dc, #8538df, #7444e1, #624de2, #4e54e1, #3d5fe5, #2a68e8, #0e71ea, #007ff0, #008df4, #0c9af8, #2ba7fa);
+
+}
+
+/* #endregion */
+
+
+/**=============== hulláb díszítés ===============*/
+/* #region  kék hullám díszítés */
+.custom-shape-divider-bottom-1663523698 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    z-index: 0;
+    /* border: 2px solid #30fa30; */
+}
+
+.custom-shape-divider-bottom-1663523698 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 60px;
+}
+
+.custom-shape-divider-bottom-1663523698 .shape-fill {
+    fill: #2ba0ff;
+}
+
+/* #endregion */
+
+
+/* #endregion */
+
+/*** ======================================================
+
+  **                  második szekció:   
+
+  ** ======================================================*/
+
+/* #region  MÁSODIK SZEKCIÓ */
+#masodik_szekcio {
+    padding: 2rem 1rem 8rem 1rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* border: solid 1px red; */
+    background-image: linear-gradient(180deg,
+            #299fff 0%,
+            #299fff 1%,
+            #31a2ff 5%,
+            #85bcff 14%,
+            #d7e6ff 32%,
+            #f0f2f7 77%);
+
+}
+
+
+/**===============  MEGJELENÉS CÍM ÉS TARTALOM ===============*/
+/* #region  MEGJELENÉS CÍM ÉS TARTALOM */
+
+#megjelenes_div {
+    display: flex;
+    flex-direction: column;
+    /* background-color: #eef593; */
+    width: 100%;
+}
+
+#megjelenes_cim {
+    margin-top: 3rem;
+    font-size: 5.5vmin;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    /* background-color: #f59393; */
+}
+
+.bxs-square-rounded {
+    background-image: linear-gradient(145deg,
+            hsl(185deg 100% 45%) 0%,
+            hsl(185deg 90% 49%) 7%,
+            hsl(185deg 87% 51%) 13%,
+            hsl(184deg 89% 53%) 19%,
+            hsl(184deg 92% 56%) 25%,
+            hsl(184deg 95% 58%) 31%,
+            hsl(183deg 98% 59%) 37%,
+            hsl(182deg 97% 61%) 44%,
+            hsl(180deg 92% 63%) 51%,
+            hsl(177deg 93% 66%) 58%,
+            hsl(174deg 95% 69%) 67%,
+            hsl(171deg 96% 72%) 76%,
+            hsl(168deg 98% 74%) 87%,
+            hsl(164deg 100% 77%) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+/* #endregion */
+
+/**=============== MEGJELENÉS TARTALOM ===============*/
+/* #region  MEGJELENÉS TARTALOM*/
+#megjelenes_tartalom {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* background-color: #3df39e; */
+}
+
+#jellemzok_div {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    /* background-color: #304df1; */
+}
+
+/* #endregion */
+
+/**=============== JELLEMZŐK ===============*/
+/* #region  JELLEMZŐK */
+
+#szines_doboz_div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: fit-content;
+    align-self: center;
+    gap: 1rem;
+    margin: 1.9rem 0;
+    /* background-color: #da30f1; */
+}
+
+.szines_dobozok {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    font-size: 0.85rem;
+    font-weight: normal;
+    padding: 0.9rem 1rem;
+    border-radius: 12px;
+    text-shadow: 0 0 1px var(--betuszin);
+}
+
+/* #endregion */
+
+/**===============  LAPTOP ÉS TELEFON KÉP ===============*/
+/* #region  LAPTOP ÉS TELEFON KÉP */
+
+#telefonLaptop_kep {
+    height: 14rem;
+    width: 17rem;
+    background: url('../../image/laptop_telefon.png') no-repeat;
+    background-position: center;
+    background-size: contain;
+    /* filter: drop-shadow(0 20px 8px #15161a); */
+    /*filter: drop-shadow(0px 40px 10px #2a2b33); */
+    filter: drop-shadow(0px 25px 7px #2a2b33);
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: #bcd7ff; */
+}
+
+/* #endregion */
+
+/* #endregion */
+
+/*** ======================================================
+
+  **                  harmadik szekció:   
+
+  ** ======================================================*/
+
+/* #region harmadik szekció:  */
+#harmadik_szekcio {
+    padding: 2rem 1rem 8rem 1rem;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    gap: 4rem;
+    /* background-color: #bcd7ff; */
+}
+
+#funkciok_felsorolasa {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    height: fit-content;
+    /* background-color: #ce74f8; */
+}
+
+#funkciok_cim {
+    font-size: 5.5vmin;
+    font-weight: bold;
+    display: flex;
+    height: fit-content;
+    align-items: center;
+}
+
+/**===============  funkció címek és leírás ===============*/
+/* #region  funkció címek és leírás */
+
+.funkciok_div {
+    /* background: #32a2fd; */
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.funkcio_cimek {
+    font-size: 4.5vmin;
+    font-weight: bold;
+    color: #2b2f35;
+    display: flex;
+    height: fit-content;
+    align-items: center;
+}
+
+.funkcio_leiras {
+    /* background: #32fd65; */
+    font-size: 0.8rem;
+    width: 100%;
+    line-height: 1.3rem;
+}
+
+/* #endregion */
+
+/**===== technológia elemek ikonjai =====*/
+/* #region technológia elemek ikonjai */
+.bx-shape-triangle {
+
+    background-image: linear-gradient(to right bottom, #0669c6, #0f6acf, #1b6bd8, #276be0, #346be8, #5f66e7, #7e60e4, #9858df, #bd48cb, #d837b3, #eb2999, #f6257e);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.bxs-cloud-upload {
+    background-image: linear-gradient(to right bottom, #2942f8, #1f4efb, #1858fd, #1462fe, #176bff, #007dff, #008dff, #009cff, #00b3ff, #29c9ff, #60dcff, #8feefd);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.bxs-spreadsheet {
+    background-image: linear-gradient(to right bottom, #4629f8, #3242fd, #1c54ff, #0663ff, #0771ff, #0083ff, #0092ff, #00a1ff, #31b6ff, #5dc9fe, #86dbfd, #afecfd);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.bxs-bar-chart-alt-2 {
+    background-image: linear-gradient(to right, #29c0f8, #00b8fb, #00b0fd, #00a7ff, #0b9dff, #0092fe, #0086fc, #1d79f8, #0268f2, #0057ea, #0144e1, #172ed7);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* #endregion */
+
+/* #endregion */
+
+/*** ======================================================
+
+  **                  negyedik szekció:   
+
+  ** ======================================================*/
+
+/* #region negyedik szekció:  */
+#negyedik_szekcio {
+    padding: 2rem 1rem 8rem 1rem;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    gap: 6rem;
+}
+
+.bxs-cube {
+    background-image: linear-gradient(to right bottom, #0b73d5, #0083de, #0093e5, #00a2ea, #00b1ee, #1fbdf0, #37c8f2, #4ed3f3, #67def5, #7de8f7, #94f3fa, #a9fdfd);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#alk_tech_cim {
+    font-size: 5.5vmin;
+    font-weight: bold;
+    display: flex;
+    height: fit-content;
+    align-items: center;
+}
+
+.tech_elem_cimek {
+    font-size: 5.3vmin;
+    font-weight: bold;
+    color: #2b2f35;
+    display: flex;
+    height: fit-content;
+    align-items: center;
+    height: fit-content;
+    width: 100%;
+}
+
+#tech_felsorolas_div {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 2rem;
+}
+
+#tech_felsorolas_div .egyeni_ikon {
+    margin: 0.1rem;
+    width: 5.3vmin;
+    height: 5.3vmin;
+}
+
+
+
+/**===== footer =====*/
+/* #region  footer */
+#footer {
+    font-size: 0.6rem;
+    padding: 7px;
+    width: 100%;
+    background: #24292e;
+    display: flex;
+    justify-content: center;
+    word-spacing: 1px;
+}
+
+#copyright,
+#ev {
+    color: white;
+}
+
+/* #endregion */
+
+/* #endregion */
+
+/**=========================     RESPONZIVITÁS    ========================*/
+/* #region  RESPONZIVITÁS */
+
+/**=========================     600px-nél:    ========================*/
+
+@media screen and (min-width: 600px) {
+
+    /**===== első szekció: =====*/
+    /* #region  ELSŐ SZEKCIÓ */
+    #attekintes_szoveg {
+        font-size: 3vmin;
+        line-height: 4vmin;
+    }
+
+    #attekintes_cim {
+        font-size: 3vmin;
+    }
+
+    #rocket_planner_cim,
+    #rocket_planner_cim_kek {
+        font-size: 3.5vmin;
+    }
+
+    /* #endregion */
+
+    /**===== második szekció: =====*/
+
+    #jellemzok_div {
+        margin-left: 38px;
+    }
+
+
+
+
+    #telefonLaptop_kep {
+        height: 15rem;
+        width: 18rem;
+    }
+
+    /**===== harmadik szekció: =====*/
+    .funkcio_cimek {
+        font-size: 1.2rem;
+    }
+
+    /**===== negyedik szekció: =====*/
+    .tech_elem_cimek {
+        font-size: 1.5rem;
+    }
+
+    #tech_felsorolas_div .egyeni_ikon {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+}
+
+/**=========================     800px-nél:    ========================*/
+
+@media screen and (min-width: 800px) {
+
+    /**===== első szekció: =====*/
+
+    /* #region  ELSŐ SZEKCIÓ */
+    #elso_szekcio {
+        display: flex;
+        flex-direction: row;
+        gap: 0rem;
+        padding: 5rem 3rem 5rem 3rem;
+    }
+
+    #projekt_cim {
+        width: 50%;
+    }
+
+    #rocket_planner_cim,
+    #rocket_planner_cim_kek {
+        font-size: 1.8rem;
+        z-index: 1;
+        /* border: 1px solid red; */
+    }
+
+    #attekintes_cim_es_szoveg {
+        width: 50%;
+    }
+
+    #attekintes_szoveg {
+        font-size: 2.4vmin;
+        line-height: 3.4vmin;
+    }
+
+    #elso_szekcio #tovabb_link {
+        position: absolute;
+        bottom: 250px;
+        margin-left: 0px;
+        font-size: 20px;
+        padding: 8px 40px 8px;
+        border-radius: 15px;
+        width: fit-content;
+    }
+
+    #elso_szekcio #tovabb_link:hover {
+        transition: 0.8s;
+        /* transform: translateX(0.3rem); */
+        box-shadow: inset 100rem 0 #256ae9;
+
+
+    }
+
+    #elso_szekcio .nyil_ikon_kozep {
+        bottom: 0;
+        left: 0;
+        right: 0;
+        position: absolute;
+        transform: translateY(-50px);
+    }
+
+    .custom-shape-divider-bottom-1663523698 svg {
+        height: 200px;
+    }
+
+    /* #endregion */
+
+    /**===== második szekció: =====*/
+
+    /* #region  MÁSODIK SZEKCIÓ */
+    #masodik_szekcio {
+        padding: 0rem 4rem 8rem 4rem;
+    }
+
+    #szines_doboz_div {
+        align-self: flex-start;
+    }
+
+    #telefonLaptop_kep {
+        height: 45vmin;
+        width: 47vmin;
+        margin-right: 0;
+    }
+
+    #megjelenes_tartalom {
+        flex-direction: row;
+    }
+
+    #megjelenes_cim {
+        margin-top: 5rem;
+        font-size: 4vmin;
+    }
+
+    #szines_doboz_div {
+        gap: 1.3rem;
+        margin-top: 2.8rem;
+    }
+
+    /* #endregion */
+
+
+    /**===== harmadik szekció: =====*/
+    /* #region harmadik szekció  */
+
+    #harmadik_szekcio {
+        flex-direction: row;
+        gap: 8rem;
+        padding: 5rem 4rem;
+    }
+
+    #funkciok_cim {
+        font-size: 4vmin;
+    }
+
+    .funkcio_cimek {
+        font-size: 1.3rem;
+    }
+
+    .funkcio_leiras {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    /* #endregion */
+
+    /**===== negyedik szekció: =====*/
+
+    #negyedik_szekcio {
+        padding: 5rem 4rem 8rem 4rem;
+        gap: 8rem;
+    }
+
+    #tech_felsorolas_div {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 90%;
+        gap: 4rem;
+    }
+
+    .tech_elem_cimek {
+        font-size: 1.6rem;
+        width: auto;
+    }
+
+    #tech_felsorolas_div .egyeni_ikon {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+}
+
+/**=========================     1200px-nél:    ========================*/
+
+@media screen and (min-width: 1200px) {
+
+    /**===== második szekció: =====*/
+
+    #szines_doboz_div {
+        gap: 1.5rem;
+        margin-top: 5rem;
+    }
+
+    .szines_dobozok {
+        font-size: 1.1rem;
+        padding: 1rem 1.1rem;
+        border-radius: 14px;
+    }
+
+    #telefonLaptop_kep {
+        height: 60vmin;
+        width: 65vmin;
+        margin-right: 3rem;
+    }
+
+    /**===== harmadik szekció: =====*/
+
+    #harmadik_szekcio {
+        gap: 20rem;
+    }
+
+    #funkciok_felsorolasa {
+        gap: 3rem;
+        justify-content: center;
+    }
+
+    .funkciok_div {
+        gap: 0.5rem;
+    }
+
+}
+
+/**=========================     1500px-nél:    ========================*/
+
+@media screen and (min-width: 1500px) {
+
+    /**===== első szekció: =====*/
+    /* #region  ELSŐ SZEKCIÓ */
+    #elso_szekcio {
+        padding: 5rem 4rem 5rem 4rem;
+    }
+
+    #projekt_cim {
+        width: 50%;
+    }
+
+    #attekintes_cim_es_szoveg {
+        width: 50%;
+    }
+
+    #attekintes_szoveg {
+        font-size: 2.8vmin;
+        line-height: 4.2vmin;
+    }
+
+    #attekintes_cim {
+        font-size: 1.8rem;
+    }
+
+    #rocket_planner_cim,
+    #rocket_planner_cim_kek {
+        font-size: 2.5rem;
+
+    }
+
+    a>.nyil_le {
+        font-size: 40px;
+    }
+
+    .custom-shape-divider-bottom-1663523698 svg {
+        height: 200px;
+    }
+
+    /* #endregion */
+
+    /**===== második szekció: =====*/
+    #telefonLaptop_kep {
+        height: 80vmin;
+        width: 85vmin;
+        margin-right: 9rem;
+        transform: translateY(-5rem);
+    }
+
+    /**===== harmadik szekció: =====*/
+    /* #region harmadik szekció  */
+    #harmadik_szekcio {
+        gap: 28rem;
+        padding: 6rem 4rem;
+    }
+
+    #funkciok_felsorolasa {
+        gap: 2rem;
+    }
+
+    .funkcio_cimek {
+        font-size: 1.4rem;
+    }
+
+    .funkcio_leiras {
+        font-size: 1.1rem;
+        line-height: 1.6rem;
+    }
+
+    .funkciok_div {
+        gap: 0.6rem;
+    }
+
+    /* #endregion */
+
+    /**===== negyedik szekció: =====*/
+    /* #region negyedik szekció  */
+    #negyedik_szekcio {
+        padding: 5rem 4rem 8rem 4rem;
+    }
+
+    .tech_elem_cimek {
+        font-size: 1.7rem;
+    }
+
+    #tech_felsorolas_div .egyeni_ikon {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    #tech_felsorolas_div {
+        width: 60%;
+    }
+
+    .egyeni_ikon {
+        margin: 0.1rem;
+        width: 2.2rem;
+        height: 2.2rem;
+    }
+
+    /* #endregion  */
+}
+
+/**=========================     1700px-nél:    ========================*/
+
+@media screen and (min-width: 1700px) {
+
+/**===== harmadik szekció: =====*/
+
+    /* #region harmadik szekció  */
+
+    #harmadik_szekcio {
+        gap: 28rem;
+        padding: 8rem 4rem;
+    }
+
+    #funkciok_felsorolasa {
+        gap: 3rem;
+    }
+
+    .funkcio_cimek {
+        font-size: 1.4rem;
+    }
+
+    .funkcio_leiras {
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+    }
+
+    .funkciok_div {
+        gap: 0.8rem;
+    }
+
+    /* #endregion */    
+
+}
+
+/* #endregion */

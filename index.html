@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--=============== CSS ================-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/sotet_tema.css">
+    <!--=============== scroll releval ================-->
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <!--=============== Boxicon ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!--=============== Title bar kép ===============-->
+    <link rel="shortcut icon" href="image/logo/logo.png" type="image/png">
+    <title>Kökény Barnabás</title>
+</head>
+
+<body>
+
+    <!--==============  oldal betöltés   ================-->
+    <div id="betoltes"><i class='bx bx-loader-alt bx-spin'></i></div>
+
+    <!--==============  kezdő oldal szekció   ==============-->
+    <section class="kezdo_oldal" id="kezdo_oldal">
+
+        <!--==============  fejléc(logó, név, menü)  ==============-->
+
+        <nav class="nav" id="nav">
+            <div class="logo_fejlecnev" id="logo_fejlecnev">
+                <!--*==============  logó   ==============-->
+                <div id="logo" class="logo"></div>
+                <!--*==============  fejlécben a logó melletti név   ==============-->
+                <p class="fejlec_nev" id="fejlec_nev">
+                    Kökény Barnabás
+                </p>
+            </div>
+
+            <!--*==============  menü   ==============-->
+            <ul class="nav_menu" id="nav_menu">
+                <li class="nav_elem">
+                    <a href="#kezdo_oldal" class="nav_link">Főoldal</a>
+                </li>
+                <li class="nav_elem">
+                    <a href="#masodik_szekcio" class="nav_link">Rólam</a>
+                </li>
+                <li class="nav_elem">
+                    <a href="#harmadik_szekcio" class="nav_link">Projektek</a>
+                </li>
+                <li class="nav_elem">
+                    <a href="#kapcsolat_szekcio" class="nav_link">Kapcsolat</a>
+                </li>
+            </ul>
+
+            <!--*==============  menü bar   ==============-->
+            <div class="menu_bar">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+        </nav>
+
+        <!--==============  kezdő oldal szöveges része  ==============-->
+        <div class="kezdo_oldal_szoveges_resze" id="kezdo_oldal_szoveges_resze">
+
+            <div class="tema_valtas">
+                <i class='bx bxs-moon hold'></i>
+                <i class='bx bxs-sun nap'></i>
+            </div>
+
+            <div id="kezdo_oldal_szoveg_div">
+
+                <!--*==============  webfejlesztés cím   ==============-->
+                <p class="kezdo_oldal_szoveg" id="webfejlesztes_cim">
+                    Webfejlesztés
+                </p>
+
+                <!--*==============  üdvözlés napszakkal   ==============-->
+                <p class="kezdo_oldal_szoveg" id="udvozles_napszak">
+                    <span id="koszones"></span>
+                </p>
+
+                <!--*==============  üdvözlés   ==============-->
+                <p class="kezdo_oldal_szoveg" id="udvozles">
+                    Üdvözlöm az oldalamon!
+                </p>
+
+                <!--*==============  rövid bemutatkozó szöveg   ==============-->
+                <p class="kezdo_oldal_szoveg rovid_bemutatkozas" id="rovid_bemutatkozas">
+                    Kreatív fejlesztés és tervezés
+                </p>
+
+            </div>
+
+        </div>
+
+        <!--*==============  ikon középre igazítása   ==============-->
+        <div class="ikon_kozep">
+            <a href="#masodik_szekcio"><i class='bx bx-chevron-down-circle bx-fade-down-hover nyil_le'></i></a>
+        </div>
+
+    </section>
+
+    <!--==============  második oldal szekció (rólam) ==============-->
+    <section class="masodik_szekcio" id="masodik_szekcio">
+
+        <p class="rolam_cim" id="rolam_cim">
+            <i class='bx bx-cube'></i>
+            Rólam
+        </p>
+
+        <div id="masodik_szekcio_kozep">
+
+            <div class="rolam_leiras rolam_szelessegek" id="rolam_leiras">
+
+                A nevem Kökény Barnabás. Szoftverfejlesztő és tesztelő végzetséggel rendelkezem.
+                Törekszem a weblapok igényes és a használatot megkönnyítő kialakítására és
+                a tiszta kód elveinek betartására.
+
+            </div>
+
+            <p class="rolam_szelessegek fel_animacio" id="ismeretek_cim">Ismeretek</p>
+            <!--============== ismeretek   ==============-->
+            <!-- #region ismeretek -->
+            <div class="rolam_szelessegek" id="ismeretek_div">
+
+                <!-- #region front-end -->
+                <div class="kategoriak fel_animacio" id="frontend">
+
+                    <p class="kategoria_cim" id="frontend_cim">Front-end</p>
+
+                    <div class="felsorol_div" id="frontend_div">
+                        <p class="felsorol"><i class='bx bxl-javascript felsorol_ikon'
+                                style='color:#ffc507'></i>JavaScript</p>
+                        <p class="felsorol"><i class='bx bxl-html5 felsorol_ikon' style='color:#e45e30'></i>HTML</p>
+                        <p class="felsorol"><i class='bx bxl-css3 felsorol_ikon' style='color:#0091d5'></i>CSS</p>
+                        <p class="felsorol"><i class='bx bxl-bootstrap felsorol_ikon'
+                                style='color:#7a42ea'></i>Bootstrap</p>
+                    </div>
+
+                </div>
+                <!-- #endregion -->
+
+                <!-- #region backend -->
+                <div class="kategoriak fel_animacio" id="backend">
+
+                    <p class="kategoria_cim" id="backend_cim">Back-end</p>
+
+                    <div class="felsorol_div" id="backend_div">
+                        <p class="felsorol"><i class='bx bxl-php felsorol_ikon' style='color:#4d588e'></i>Php</p>
+                        <p class="felsorol"><i class='bx bxs-data felsorol_ikon' style='color:#4087c1'></i>Mysql</p>
+                    </div>
+
+                </div>
+                <!-- #endregion -->
+
+                <!-- #region egyéb -->
+                <div class="kategoriak fel_animacio" id="egyeb">
+
+                    <p class="kategoria_cim" id="egyeb_cim">Egyéb</p>
+
+                    <div class="felsorol_div" id="egyeb_div">
+
+                        <p class="felsorol"><img src="image/logo/csharp.png" class="egyeni_ikon"></img>C#</p>
+                        <p class="felsorol"><img src="image/logo/python.ico" class="egyeni_ikon"></img></i>Python</p>
+                        <p class="felsorol"><i class='bx bxl-github felsorol_ikon' style='color:#292e31'></i>Github</p>
+                        <p class="felsorol"><img src="image/logo/figma.png" class="egyeni_ikon"></i>Figma</p>
+                    </div>
+
+                </div>
+                <!-- #endregion -->
+
+            </div>
+            <!-- #endregion -->
+
+        </div>
+
+    </section>
+
+    <!--==============  harmadik szekció (projektek)  ==============-->
+    <section class="harmadik_szekcio" id="harmadik_szekcio">
+
+        <p class="projektek_cim" id="projektek_cim">
+            <i class='bx bxs-cube-alt kocka'></i>
+            Projektek
+        </p>
+
+        <!--==============  projekteket összefogó div wrap tulajdonsággal  ==============-->
+        <div id="projektek_div">
+
+            <!--==============  kiadás tervező projekt  ==============-->
+            <!-- #region kiadás tervező -->
+            <div class="projekt_box jobbra_animacio" id="kiadas_tervezo">
+
+                <!--==============  fejléckép kép  ==============-->
+                <div id="projekt_kep_hatter">
+                    <div class="projekt_kep" id="kiad_kez_kep"></div>
+                </div>
+
+                <!--==============  projekt szöveg  ==============-->
+                <div class="projekt_szoveg_div">
+                    <p class="projektcim">Kiadás tervező</p>
+                    <p class="projekt_leiras">
+                        Kiadások tervezésére és naplózására használatos webalkalmazás.
+                    </p>
+
+                    <div id="projekt_linkek">
+                        <a href="#" class="projekt_link"><i class='bx bx-link'></i>Megtekintés</a>
+                        <a href="projektek/rocket_planner.html" class="projekt_link" id="projekt_reszlet">Részletek</a>
+                    </div>
+                </div>
+
+            </div>
+            <!-- #endregion -->
+
+        </div>
+
+    </section>
+
+    <!--==============  negyedik szekció (kapcolat)  ==============-->
+    <section class="kapcsolat_szekcio" id="kapcsolat_szekcio">
+        <h1 class="jobbra_animacio" id="kapcsolat_cim">Kapcsolat</h1>
+
+        <div id="kapcsolat_ikonok">
+            <a href="#"><i class='bx bxl-linkedin-square linkedin kacsolat_ikon_animacio'></i></a>
+
+            <a href="#" target="_blank"><i class='bx bxl-github kacsolat_ikon_animacio'></i></a>
+
+            <a href="#" id="email_kuldes"><i class='bx bx-mail-send mail kacsolat_ikon_animacio'></i></a>
+        </div>
+
+        <div class="felugro_ablak" id="felugro_ablak">
+
+
+            <div class="felugro_ablak_tartalom" id="felugro_ablak_tartalom">
+
+                <p id="kuldes_visszajelzes"></p>
+                <div id="vissza">+</div>
+                <h3 id="uzenetkuldes_cim">Üzenetküldés</h3>
+
+                <form id="uzenetkuldes_form">
+                    <input type="text" name="name" id="user_name" placeholder="Név">
+                    <input type="email" name="email" id="email" placeholder="email">
+                    <textarea name="message" id="message" placeholder="Üzenet" rows="5"></textarea>
+                    <button type="submit" id="bt_kuldes">Küldés</button>
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+    <!--==============  footer  ==============-->
+    <footer class="footer" id="footer">
+        <p id="copyright">&copy; copyright <span id="ev"></span> Kökény Barnabás</p>
+    </footer>
+
+    <!--==============  script   ==============-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--============== emailjs ==============-->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!--============== main.js ==============-->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

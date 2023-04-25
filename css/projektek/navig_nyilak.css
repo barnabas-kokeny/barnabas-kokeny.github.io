@@ -1,0 +1,113 @@
+@import url('../css/root.css');
+
+/**=============== Vissza a főoldalra div ===============*/
+.nyilak {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+#vissza_fo_oldalra {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    font-size: 18px;
+    color: var(--betuszin);
+    background: white;
+    box-shadow: 1px 1.5px 5px #c0c4c9;
+    z-index: 10;
+}
+
+#vissza_fo_oldalra:hover {
+    box-shadow: 0px 1px 5px #9ea3a8 !important;
+    transition-duration: 0.5s;
+}
+
+/**=============== Felnyíl ===============*/
+/* ======  ez szügseges ahhoz, hogy a fel nyíl jobb oldalt alul jelenjen meg a színés kövonallal:  ======= */
+#felnyil_div {
+    position: fixed;
+    /* ez szabály fog érvényesülni a gyerek elemnél => "#fel_nyil" : */
+    bottom: 40px;
+    right: 30px;
+}
+
+#fel_nyil {
+    display: none;
+    position: relative;
+    font-size: 30px;
+    color: #b7e1ff;
+    background-color: #24292e !important;
+    /* a "#felnyil_div" szülő elemben beállított pozíció itt vehető észre*/
+}
+
+#fel_nyil::before {
+    content: "";
+    background-image: linear-gradient(to right, #9deaff, #78daff, #52c9ff, #29b7ff, #00a4ff, #0096ff, #0087ff, #0076ff, #0067ff, #0055ff, #1240ff, #3520fd);
+    position: absolute;
+    z-index: -1;
+    scale: 1.15;
+    animation: spin 2s linear infinite;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+}
+
+#fel_nyil::after {
+    content: "";
+    background-image: linear-gradient(to right, #9deaff, #78daff, #52c9ff, #29b7ff, #00a4ff, #0096ff, #0087ff, #0076ff, #0067ff, #0055ff, #1240ff, #3520fd);
+    position: absolute;
+    z-index: -2;
+    scale: 1.2;
+    animation: spin 2s linear infinite;
+    filter: blur(0.3rem);
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+    opacity: 1;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        rotate: 0deg;
+    }
+
+    100% {
+        rotate: 360deg;
+    }
+}
+
+#fel_nyil.fel_nyil_display {
+    display: flex;
+}
+
+#fel_nyil:hover::before, #fel_nyil:hover::after {
+    background-image: linear-gradient(to right, #3cb4ff, #2babff, #1ea2ff, #1a98ff, #248eff, #8685ff, #c279f6, #f169e1, #ff67ac, #ff8c73, #ffc042, #fff33c);
+}
+
+/*todo=========================     800px-nél:    ========================*/
+
+@media screen and (min-width: 800px) {
+
+    /**=============== Vissza a főoldalra div ===============*/
+    #vissza_fo_oldalra {
+        top: 10px;
+        left: 10px;
+        margin-left: 5px;
+
+    }
+
+    #fel_nyil {
+        bottom: 60px;
+        right: 60px;
+    }
+
+
+}

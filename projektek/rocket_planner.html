@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--=============== CSS ================-->
+    <link rel="stylesheet" href="../css/projektek/rocket_planner.css">
+    <link rel="stylesheet" href="../css/projektek/navig_nyilak.css">
+    <!--=============== scroll releval ================-->
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <!--=============== Boxicon ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!--=============== Title bar kép ===============-->
+    <link rel="shortcut icon" href="../image/logo/logo.png" type="image/png">
+    <title>Rocket Planner</title>
+</head>
+
+<body>
+    <!--==============  oldal betöltés   ================-->
+    <div id="betoltes"><i class='bx bx-loader-alt bx-spin'></i></div>
+
+    <!--=============== Áttekintés szekció ================-->
+    <section id="elso_szekcio">
+
+        <!--==============  Vissza a főoldalra  ==============-->
+        <a class="nyilak" id="vissza_fo_oldalra" href="../index.html">
+            <i class='bx bx-arrow-back'></i>
+        </a>
+        <!--=============== Projekt címe ================-->
+        <!-- #region PROJEKT CÍM -->
+
+        <div id="projekt_cim" class="jobbra_animacio">
+            <h1 id="rocket_planner_cim">
+                ROCKET PLANNER
+            </h1>
+
+            <h3 id="rocket_planner_cim_kek">
+                kiadás tervező
+            </h3>
+        </div>
+        <!-- #endregion -->
+
+        <!-- #region ÁTTEKINTÉS SZÖVEG ÉS CÍM -->
+        <div id="attekintes_cim_es_szoveg" class="balra_animacio">
+            <h3 id="attekintes_cim">Áttekintés</h3>
+
+            <p id="attekintes_szoveg">
+                A Rocket Planner alkalmazást azért hoztam létre, hogy a felhasználók életét megkönnyítsem,
+                hiszen nem biztos, hogy mindenkinek van ideje vagy elegendő ismerete ahhoz, hogy kiadásait
+                és bevételeit napi szinten rendszerezze, azokat kiszámolja és szemléletes módon ábrázolja. A
+                Rocket Planner alkalmazás pontosan erre nyújt lehetőséget! A felhasználóknak nem kell a
+                hiányos vagy meg nem lévő ismereteivel az Excel vagy más egyéb programban összeállítani
+                egy függvényt, másik esetben egy diagramot. A programommal ezt egyszerűen megteheti,
+                hiszen csak fel kell rögzítenie napi szinten az értékeket, amiket elköltött vagy kapott, és máris
+                elkészül a kimutatás.
+            </p>
+
+        </div>
+        <!-- #endregion -->
+
+        <a id="tovabb_link" class="jobbra_animacio" title="Rocket Planner Kiadás tervező" target="_blank" href="#">
+            Tovább az oldalra
+        </a>
+        <!--==============  nyíl ikon középre igazítása   ==============-->
+        <!-- #region NYÍL IKON -->
+        <div class="nyil_ikon_kozep">
+            <a href="#masodik_szekcio"><i class='bx bx-chevron-down-circle bx-fade-down-hover nyil_le'></i></a>
+        </div>
+        <!-- #endregion -->
+
+        <!--==============  hullám díszítés   ==============-->
+        <!-- #region hullám díszítés -->
+        <div class="custom-shape-divider-bottom-1663523698">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+                    opacity=".25" class="shape-fill"></path>
+                <path
+                    d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+                    opacity=".5" class="shape-fill"></path>
+                <path
+                    d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+        <!-- #endregion -->
+
+    </section>
+
+    <!--=============== Megjelenés szekció ================-->
+    <section id="masodik_szekcio">
+
+        <!--*==============  megjelenés, cím, tartalom   ==============-->
+        <!-- #region megjelenés, cím, tartalom -->
+        <div id="megjelenes_div">
+
+            <p id="megjelenes_cim" class="jobbra_animacio">
+                <i class='bx bxs-square-rounded'></i>
+                Megjelenés
+            </p>
+
+            <div id="megjelenes_tartalom">
+
+                <!--*=============== responziv design: cím, leírás. alkalmazott színek ================-->
+                <!-- #region Jellemzők, szines_doboz_div -->
+                <!--*=============== Jellemzők ================-->
+                <div id="jellemzok_div">
+
+                    <!--*=============== SZÍNES DOBOZOK ================-->
+
+                    <div id="szines_doboz_div">
+
+                        <div class="szines_dobozok" style="background-color: #48A7FF; color:white">Reszponzív</div>
+                        <div class="szines_dobozok" style="background-color: #48A7FF; color:white">Dinamikus</div>
+                        <div class="szines_dobozok" style="background-color: #48A7FF; color:white">Interaktív</div>
+                        <div class="szines_dobozok" style="background-color: #48A7FF; color:white">Egyedi</div>
+                        <div class="szines_dobozok" style="background-color: #48A7FF; color:white">Modern</div>
+                        <div class="szines_dobozok" style="background-color: #48A7FF; color:white">Letisztult</div>
+
+                    </div>
+
+                </div>
+                <!-- #endregion -->
+
+                <!--*==============  megjelenés, laptop   ==============-->
+                <div id="telefonLaptop_kep"></div>
+
+            </div>
+
+        </div>
+        <!-- #endregion -->
+
+        <!--*==============  nyíl ikon középre igazítása   ==============-->
+        <!-- #region NYÍL IKON -->
+        <div class="nyil_ikon_kozep">
+            <a href="#harmadik_szekcio"><i class='bx bx-chevron-down-circle bx-fade-down-hover nyil_le'></i></a>
+        </div>
+        <!-- #endregion -->
+
+    </section>
+
+    <!--=============== Funkciók szekció ================-->
+    <section id="harmadik_szekcio">
+
+        <p id="funkciok_cim" class="jobbra_animacio">
+            <i class='bx bx-shape-triangle'></i>
+            Funkciók
+        </p>
+
+        <!--*=============== FUNKCIÓK FELSOROLÁSA ================-->
+        <!-- #region FUNKCIÓK FELSOROLÁSA  -->
+        <div id="funkciok_felsorolasa">
+
+            <!--*=============== Költségvetési jelentés ================-->
+            <!-- #region Költségvetési jelentés -->
+            <div id="kv_jelentes_div" class="funkciok_div">
+
+                <p id="kv_jelentes_cim" class="funkcio_cimek">
+                    <i class='bx bxs-cloud-upload' style='color:#1c96e4'></i>
+                    Költségvetési jelentés
+                </p>
+
+                <p id="kv_jelentes_leiras" class="funkcio_leiras">
+                    Pénzügyi kiadások felviteli lehetősége a rendszerbe,
+                    melyből statisztikai kimutatások készülnek.
+                </p>
+
+            </div>
+            <!-- #endregion -->
+
+            <!--*=============== Kiadás tervezés ================-->
+            <!-- #region Kiadás tervezés -->
+            <div id="kiad_terv_div" class="funkciok_div">
+
+                <p id="kiad_terv_cim" class="funkcio_cimek">
+                    <i class='bx bxs-spreadsheet' style='color:#1c96e4'></i>
+                    Kiadás tervezés
+                </p>
+
+                <p id="kiad_terv_leiras" class="funkcio_leiras">
+                    Költségkeret megadásával megtervezthetőek a jövőbeni kiadások.
+                </p>
+
+            </div>
+            <!-- #endregion -->
+
+            <!--*=============== Statisztikai adatok ================-->
+            <!-- #region Statisztikai adatok -->
+            <div id="stat_adatok_div" class="funkciok_div">
+
+                <p id="stat_adatok_cim" class="funkcio_cimek">
+                    <i class='bx bxs-bar-chart-alt-2' style='color:#1c96e4'></i>
+                    Statisztikai adatok
+                </p>
+
+                <p id="stat_adatok_leiras" class="funkcio_leiras">
+                    A költségkeret varható vagy tényleges túllépése esetén
+                    értesítés közli erről a felhasználót.
+                </p>
+
+            </div>
+            <!-- #endregion -->
+
+        </div>
+        <!-- #endregion -->
+
+        <!--*==============  nyíl ikon középre igazítása   ==============-->
+        <!-- #region NYÍL IKON -->
+        <div class="nyil_ikon_kozep">
+            <a href="#negyedik_szekcio"><i class='bx bx-chevron-down-circle bx-fade-down-hover nyil_le'></i></a>
+        </div>
+        <!-- #endregion -->
+
+    </section>
+
+    <!--=============== Alkalmazott technológiák szekció ================-->
+    <section id="negyedik_szekcio">
+
+        <!--==============  Fel nyíl  ==============-->
+        <div id="felnyil_div">
+
+            <div class="nyilak" id="fel_nyil">
+                <i class='bx bx-chevron-up'></i>
+            </div>
+
+        </div>
+
+
+        <p id="alk_tech_cim" class="jobbra_animacio">
+            <i class='bx bxs-cube'></i>
+            Alkalmazott technológiák
+        </p>
+
+        <div id="tech_felsorolas_div">
+
+
+            <p class="tech_elem_cimek">
+                <i class='bx bxl-html5' style='color:#e45e30'></i>
+                HTML
+            </p>
+
+
+            <p class="tech_elem_cimek">
+                <i class='bx bxl-css3' style='color:#0091d5'></i>
+                CSS
+            </p>
+
+
+            <p class="tech_elem_cimek">
+                <i class='bx bxl-javascript' style='color:#f3cf01'></i>
+                Javascript
+            </p>
+
+
+            <p class="tech_elem_cimek">
+                <i class='bx bxs-data' style='color:#4087c1'></i>
+                MySQL
+            </p>
+
+
+            <p class="tech_elem_cimek">
+                <i class='bx bxl-php' style='color:#4d588e'></i>
+                PHP
+            </p>
+
+            <!--=============== ikon helyett kép van a jobb(színesebb) megjelenés érdekében ================-->
+            <p class="tech_elem_cimek">
+                <img src="../image/logo/figma.png" class="egyeni_ikon">
+                Figma
+            </p>
+
+        </div>
+
+    </section>
+
+    <div class="footer" id="footer">
+        <p id="copyright">&copy;copyright <span id="ev"></span> Kökény Barnabás</p>
+    </div>
+
+    <!--==============  script   ==============-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../js/rocket_planner.js"></script>
+
+
+</body>
+
+</html>

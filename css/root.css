@@ -1,0 +1,16 @@
+/*todo=============== betű típusok ===============*/
+/**=============== Monda ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Monda:wght@700&display=swap');
+/**=============== Poppins ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/*todo=============== css változók ===============*/
+:root {
+    --normal_betutipus: 'Poppins', sans-serif;
+    --betuszin: #24292e;
+    --vilagos_betu_szin: #f0f2f7;
+    --logo_szin: #3d4044;
+    --fejlec_magassag: 60px;
+    --kezdo_oldal_szoveges_resze_magassag: calc(100vh - var(--fejlec_magassag));
+    --tovabb_gomb: calc(100% / 1.618);
+}

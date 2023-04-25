@@ -1,0 +1,1043 @@
+@import url('root.css');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: text;
+    font-family: var(--normal_betutipus);
+}
+
+*::selection {
+    color: white;
+    background-color: #5bbdff;
+    text-shadow: #23262e 0px 0px 1px;
+}
+
+html {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+
+}
+
+/**=============== scrollbar ===============*/
+/* #region  scrollbar */
+body::-webkit-scrollbar {
+    width: 0.3rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: #23262e00;
+    width: 0.3em;
+}
+
+body::-webkit-scrollbar-thumb {
+    width: 0.3rem;
+    background: #23262e;
+    border-radius: 100px;
+
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: #2e313b;
+    width: 0.4rem;
+    border-radius: 100px;
+}
+
+/* #endregion */
+
+body {
+
+    color: var(--betuszin);
+    background: #f0f2f7;
+    position: relative;
+    overflow-x: hidden;
+    transition: 0.3s;
+}
+
+/**=============== betöltés ===============*/
+/* #region   */
+#betoltes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    z-index: 100;
+    background: #f0f2f7;
+}
+
+.bx-loader-alt {
+    font-size: 50px;
+    color: #4d555e;
+}
+
+/* #endregion */
+
+/**=============== nyíl le ===============*/
+/* #region  NYÍL IKON */
+section {
+    position: relative;
+}
+
+.ikon_kozep {
+
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 50px;
+    left: 0;
+    text-align: center;
+}
+
+a>.nyil_le {
+    text-decoration: none;
+    color: #7c7891;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+#kezdo_oldal .ikon_kozep {
+    text-align: center;
+    z-index: 1;
+    width: 100%;
+}
+
+/* #endregion */
+
+/*** =============================   telefon képernyő(360*740)       =========================*/
+
+/*** ======================================================
+
+  **                  első szekció:   
+
+  ** ======================================================*/
+
+/* #region első szekció  */
+/**=============== kezdő oldal szöveges része ===============*/
+
+#kezdo_oldal_szoveges_resze {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: var(--kezdo_oldal_szoveges_resze_magassag);
+    height: 100vh;
+}
+
+
+/**=============== kezdő oldal szöveg ===============*/
+.kezdo_oldal_szoveg {
+    text-align: center;
+}
+
+
+#kezdo_oldal_szoveg_div {
+    display: flex;
+    flex-direction: column;
+    gap: 2vmin;
+}
+
+/**=============== webfejlesztés cím ===============*/
+#webfejlesztes_cim {
+    font-family: var(--cim_betutipus) !important;
+    background: -webkit-linear-gradient(-90deg, #124fac, #4d8ef0, #d9e8ff, #f0f2f7);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-size: 12vw;
+    padding: 0;
+    letter-spacing: 0.2rem;
+    pointer-events: none;
+    user-select: none;
+}
+
+/**=============== üdvözlés napszak szerint ===============*/
+#udvozles_napszak {
+    font-size: 7vmin;
+    font-weight: bold;
+
+}
+
+/**=============== üdvözlés ===============*/
+#udvozles {
+    font-size: 4.5vmin;
+    font-weight: bold;
+}
+
+/**=============== rövid bemutatkozás ===============*/
+#rovid_bemutatkozas {
+    font-size: 3vmin;
+}
+
+.rovid_bemutatkozas {
+    color: #b5b6c0;
+}
+
+/* #endregion */
+
+
+/*** ======================================================
+
+  **                  masodik szekció:   
+
+  ** ======================================================*/
+
+/* #region masodik szekció  */
+
+#masodik_szekcio {
+    padding: calc(var(--fejlec_magassag)*1.5) 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#masodik_szekcio_kozep {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+}
+
+#rolam_cim {
+    font-size: 5.5vmin;
+    font-weight: bold;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.bx-cube {
+    background-image: linear-gradient(to right, #1d6be0, #2471e6, #2b77ec, #317df1, #3783f7, #607ff5, #7c7bf2, #9477ee, #bb65d9, #d752bd, #e93f9d, #f1337b);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#rolam_leiras {
+    font-size: 3.2vmin;
+    line-height: 5vmin;
+    width: 100%;
+    text-align: justify;
+    text-justify: inter-word;
+    color: #6b6c72;
+}
+
+/** ======== ismeretek ======== */
+/* #region  ismeretek */
+#ismeretek_cim {
+    font-size: 4.5vmin;
+    font-weight: bold;
+    width: 100%;
+    color: #48464e;
+}
+
+#ismeretek_div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8rem;
+
+}
+
+.kategoriak {
+    border-radius: 10px;
+    box-shadow: 1px 2px 0.3rem #d7d9e0;
+    background: white;
+    padding: 0.8rem;
+    gap: 0.4rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.kategoria_cim {
+    font-size: 4vmin;
+    font-weight: bold;
+    text-align: center;
+    color: #48464e;
+}
+
+.felsorol_div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.7rem;
+
+}
+
+.felsorol {
+    font-size: 3vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #9c99a3;
+}
+
+.felsorol_ikon {
+    font-size: 2rem;
+}
+
+.egyeni_ikon {
+    margin: 0.1rem;
+    width: 2rem;
+    height: 2rem;
+}
+
+/* #endregion */
+
+
+/* #endregion */
+
+
+/*** ======================================================
+
+  **                  harmadik szekció:   
+
+  ** ======================================================*/
+
+/* #region harmadik szekció  */
+#harmadik_szekcio {
+    background: #f0f2f7;
+    display: block;
+    padding: calc(var(--fejlec_magassag)*1.5) 30px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.kocka {
+    background-image: linear-gradient(to right bottom, #1239ca, #0058dc, #0073e9, #008cf2, #32a5f9, #55b3fb, #71c0fd, #8bcdff, #9ed3ff, #afd9fe, #bfe0fe, #cee6fd);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: none;
+}
+
+#projektek_cim {
+    font-size: 5.5vmin;
+    font-weight: bold;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#projektek_div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+
+/** ======== projekt box ======== */
+/* #region  projekt box */
+#projektek_div .projekt_box {
+    background: white;
+    box-shadow: 0 0 5px #c8ccd8;
+    border-radius: 15px;
+    width: 90%;
+    height: auto;
+    overflow: hidden;
+}
+
+#projektek_div .projekt_szoveg_div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    padding: 1rem 1rem 1.3rem;
+}
+
+#projektek_div .projekt_kep {
+    background-image: url('../image/kiadas_tervezo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 10rem;
+    width: 100%;
+}
+
+#projektek_div #kiad_kez_kep {
+    background-image: url('../image/kiadas_tervezo.png');
+}
+
+#projektek_div #projekt_kep_hatter {
+    background-image: radial-gradient(circle, #0d387c, #0f3372, #0f2e68, #10295e, #0f2454, #0e214c, #0d1f45, #0d1c3d, #0d1a35, #0e182c, #0f1624, #0f131c);
+}
+
+#projektek_div .projektcim {
+    font-size: 4.2vmin;
+    font-weight: bold;
+    width: fit-content;
+}
+
+#projektek_div .projekt_leiras {
+    font-size: 3.3vmin;
+    width: 70%;
+}
+
+/* #endregion */
+
+/** ======== projekt link ======== */
+/* #region  projekt link */
+#projektek_div #projekt_linkek {
+    display: flex;
+    justify-content: space-between;
+}
+
+#projektek_div .projekt_link {
+    font-size: 2.8vmin;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    padding: 0.2rem 1.1rem;
+    background: #204a99;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+#projektek_div #projekt_reszlet {
+    background: #3bb4cf;
+    color: var(--betuszin);
+}
+
+/* #endregion */
+
+
+/* #endregion */
+
+/*** ======================================================
+
+  **                  negyedik szekció:   
+
+  ** ======================================================*/
+
+/* #region  negyedik szekció  */
+#kapcsolat_szekcio {
+    position: relative;
+    padding: 0 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10vmin;
+    background-size: 40px 40px;
+    background-image: radial-gradient(circle, #b3b9ce 1px, rgba(0, 0, 0, 0) 1px);
+}
+
+#kapcsolat_cim {
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+}
+
+#kapcsolat_ikonok {
+    display: flex;
+    justify-content: space-between;
+    width: fit-content;
+    font-size: 2.3rem;
+    gap: 2rem;
+}
+
+.linkedin {
+    text-decoration: none;
+    color: #005684;
+}
+
+.bxl-github {
+    text-decoration: none;
+    color: var(--betuszin);
+}
+
+.mail {
+    text-decoration: none;
+    color: #004C8A;
+}
+
+#footer {
+    font-size: 0.6rem;
+    padding: 7px;
+    width: 100%;
+    background: #24292e;
+    display: flex;
+    justify-content: center;
+    word-spacing: 1px;
+}
+
+#copyright,
+#ev {
+    color: white;
+}
+
+/**===== felugró ablak =====*/
+/* #region felugró ablak  */
+#felugro_ablak {
+    background: #3f3f42e0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+#felugro_ablak.felugro_ablak_flex {
+    display: flex;
+}
+
+#felugro_ablak_tartalom {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 90%;
+    min-height: 400px;
+    height: 60%;
+    padding: 15% 10% 13% 10%;
+    border-radius: 2%;
+    gap: 15px;
+}
+
+#felugro_ablak_tartalom.email_ablak_megnyit {
+    animation: scale 0.3s;
+}
+
+/** === scale animáció az emailküldés ablak megnyitásához */
+@keyframes scale {
+
+    0% {
+        scale: 0.7;
+    }
+
+    100% {
+        scale: 1;
+    }
+}
+
+#uzenetkuldes_form {
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#felugro_ablak_tartalom #vissza {
+    width: auto;
+    display: flex;
+    justify-content: flex-end;
+    font-weight: bold;
+    color: #575763;
+    position: absolute;
+    font-size: 1.6rem;
+    top: 8px;
+    right: 18px;
+    cursor: pointer;
+    transform: rotate(45deg);
+}
+
+#uzenetkuldes_cim {
+    color: #3e3e44;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+textarea#message {
+    resize: none;
+}
+
+#uzenetkuldes_form>input,
+textarea,
+#bt_kuldes {
+    width: 100%;
+    padding: 2%;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 2px #808b94;
+    background: white;
+    font-size: 0.75rem;
+}
+
+#uzenetkuldes_form>input::placeholder,
+textarea::placeholder {
+    color: #989daa;
+    font-weight: lighter;
+}
+
+#uzenetkuldes_form>input:focus,
+textarea:focus {
+    background: #f1f2f5;
+}
+
+/**===== küldés gomb =====*/
+/* #region  küldés gomb */
+#bt_kuldes {
+    background: #1454b4;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 0px 10px 0px 10px;
+    transition: all 0.3s;
+}
+
+#bt_kuldes:hover {
+    background: #145ac4;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+/* #endregion */
+
+/**===== küldés válasz =====*/
+/* #region  küldés válasz */
+#kuldes_visszajelzes {
+    font-size: 0.75rem;
+    border-radius: 5px;
+    padding: 3px 15px;
+    position: absolute;
+    top: 20px;
+}
+
+#kuldes_visszajelzes.hiba_uzenet {
+    background: #ffd7d7;
+    color: #b90129;
+    animation: translate_animation 0.8s;
+}
+
+#kuldes_visszajelzes.sikeres_uzenet {
+    background: #c5ffc5;
+    color: #037c32;
+    animation: translate_animation 0.8s;
+}
+
+@keyframes translate_animation {
+
+    0% {
+        transform: translateY(-20px);
+    }
+
+    25% {
+        transform: translateY(0px);
+    }
+
+    60% {
+        transform: translateY(-12px);
+    }
+
+    70% {
+        transform: translateY(0px);
+    }
+
+    85% {
+        transform: translateY(-3.6px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* #endregion */
+
+
+/* #endregion */
+
+/* #endregion */
+
+
+/*** ======================================================
+
+  **             Képernyő méret beállításai:   
+
+  ** ======================================================*/
+/* #region Képernyő méret beállításai  */
+
+/**=========================     600px-nél:    ========================*/
+
+/* #region 600px-nél: */
+@media screen and (min-width: 600px) {
+
+    /**===== második szekció beállításai: =====*/
+    /* #region második szekció  */
+    #rolam_leiras {
+        font-size: 2.8vmin;
+    }
+
+    #ismeretek_cim {
+        font-size: 3.5vmin;
+    }
+
+    #ismeretek_div {
+        gap: 1rem;
+    }
+
+    .felsorol_div {
+        grid-template-columns: repeat(3, 1fr);
+        /* background: #ff00001f; */
+    }
+
+    .kategoria_cim {
+        font-size: 2.8vmin;
+    }
+
+    .felsorol {
+        font-size: 1.8vmin;
+    }
+
+    .felsorol_div {
+        row-gap: 1rem;
+    }
+
+    .kategoriak {
+        gap: 0.8rem;
+    }
+
+    .rolam_szelessegek {
+        width: 70% !important;
+    }
+
+    /* #endregion */
+
+    /**===== harmadik szekció beállításai: =====*/
+    /* #region harmadik szekció beállításai: */
+    #projektek_div .projekt_box {
+        width: 50%;
+    }
+
+    #projektek_div .projekt_szoveg_div {
+        gap: 0.5rem;
+    }
+
+    #projektek_div .projekt_kep {
+        height: 11rem;
+    }
+
+    #projektek_div .projektcim {
+        font-size: 3.5vmin;
+    }
+
+    #projektek_div .projekt_leiras {
+        font-size: 2.5vmin;
+        width: 90%;
+    }
+
+    #projektek_div .projekt_link {
+        font-size: 2vmin;
+        border-radius: 5px;
+        padding: 0.2rem 1rem;
+    }
+
+    /* #endregion */
+
+    /**===== negyedik szekció beállításai: =====*/
+    #felugro_ablak_tartalom {
+        width: 70%;
+        padding: 12% 5% 10% 5%;
+    }
+
+    #kuldes_visszajelzes {
+        font-size: 0.7rem;
+        border-radius: 8px;
+        padding: 3px 20px;
+    }
+
+}
+
+/* #endregion */
+
+/**=========================     1000px-nél:    ========================*/
+
+/* #region 1000px-nél:  */
+@media screen and (min-width: 1000px) {
+
+    /**===== második szekció beállításai: =====*/
+
+    #rolam_leiras {
+        font-size: 1.3rem;
+    }
+
+    #ismeretek_div {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+    .felsorol {
+        font-size: 0.7rem;
+    }
+
+    .rolam_szelessegek {
+        width: 80% !important;
+    }
+
+
+
+    /**===== harmadik szekció beállításai: =====*/
+
+    /* #region harmadik szekció beállításai  */
+
+    #projektek_div .projekt_box {
+        width: 40%;
+    }
+
+    #projektek_div .projekt_szoveg_div {
+        padding: 1.2rem 1.2rem 1.5rem;
+    }
+
+    #projektek_div .projektcim {
+        font-size: 3.3vmin;
+    }
+
+    #projektek_div .projekt_leiras {
+        font-size: 2.3vmin;
+    }
+
+    #projektek_div .projekt_link {
+        font-size: 1.7vmin;
+        padding: 0.2rem 1.7rem;
+    }
+
+    /* #endregion */
+
+    /**===== negyedik szekció beállításai: =====*/
+    #felugro_ablak_tartalom {
+        width: 40%;
+        height: 50%;
+        padding: 10% 5% 8% 5%;
+    }
+
+}
+
+/* #endregion */
+
+/**=========================     1200px-nél:    ========================*/
+
+/* #region 1200px-nél:  */
+@media screen and (min-width: 1200px) {
+
+    /**===== kezdőoldal beállításai: =====*/
+    #webfejlesztes_cim {
+        margin-top: -170px;
+    }
+
+    #rovid_bemutatkozas {
+        font-size: 2.5vmin;
+    }
+
+    /**===== második szekció beállításai: =====*/
+    /* #region  második szekció */
+    #masodik_szekcio {
+        padding: 70px 28px;
+        gap: 2.5rem;
+    }
+
+    #masodik_szekcio_kozep {
+        gap: 1.5rem;
+
+    }
+
+    #rolam_leiras {
+        width: 50%;
+        font-size: 2.7vmin;
+        line-height: 5vmin;
+    }
+
+    #ismeretek_div {
+        gap: 2rem;
+
+    }
+
+    .kategoriak {
+        gap: 0.9rem;
+        padding: 1.4rem;
+        border-radius: 25px;
+    }
+
+    .felsorol_div {
+        row-gap: 1.2rem;
+    }
+
+    .felsorol {
+        font-size: 0.8rem;
+    }
+
+    /* #endregion */
+
+    /**===== harmadik szekció beállításai: =====*/
+
+    /* #region harmadik szekció beállításai  */
+    #harmadik_szekcio {
+        height: 100vh;
+    }
+
+    #projektek_div .projekt_box {
+        width: 30%;
+    }
+
+    #projektek_div .projekt_szoveg_div {
+        gap: 0.6rem;
+        padding: 1.5rem 1.5rem 1.7rem;
+    }
+
+    #projektek_div .projektcim {
+        font-size: 3.3vmin;
+    }
+
+    #projektek_div .projekt_leiras {
+        font-size: 2.3vmin;
+    }
+
+    #projektek_div .projekt_link {
+        font-size: 1.5vmin;
+        padding: 0.2rem 1.4rem;
+    }
+
+    /* #endregion */
+
+    /**===== negyedik szekció beállításai: =====*/
+    #felugro_ablak_tartalom {
+        width: 30%;
+        height: 60%;
+        padding: 6% 3% 5% 3%;
+    }
+
+}
+
+/* #endregion */
+
+/**=========================     1500px-nél:    ========================*/
+
+/* #region 1500px-nél:  */
+@media screen and (min-width: 1500px) {
+
+    a>.nyil_le {
+        font-size: 40px;
+    }
+
+    /**===== második szekció beállításai: =====*/
+    /* #region második szekció beállításai:  */
+    #masodik_szekcio {
+        padding: calc(40px + var(--fejlec_magassag)) 30px;
+        height: 100vh;
+        gap: 2.3rem;
+    }
+
+    #masodik_szekcio_kozep {
+        gap: 2rem;
+    }
+
+    .felsorol_ikon {
+        font-size: 2.2rem;
+    }
+
+    .egyeni_ikon {
+        margin: 0.1rem;
+        width: 2.2rem;
+        height: 2.2rem;
+    }
+
+    .rolam_szelessegek {
+        width: 70% !important;
+    }
+
+
+    /* #endregion */
+
+    /**===== harmadik szekció beállításai: =====*/
+    /* #region harmadik szekció beállításai:  */
+    #projektek_div .projekt_box {
+        width: 25%;
+    }
+
+    #projektek_div .projektcim {
+        font-size: 3.2vmin;
+    }
+
+    #projektek_div .projekt_leiras {
+        font-size: 2.2vmin;
+    }
+
+    #projektek_div .projekt_link {
+        padding: 0.2rem 1.5rem;
+    }
+
+    /* #endregion */
+
+    /**===== negyedik szekció beállításai: =====*/
+    /* #region negyedik szekció beállításai:  */
+    #kapcsolat_cim {
+        font-size: 3rem;
+        letter-spacing: 1rem;
+    }
+
+
+    #kapcsolat_szekcio #kapcsolat_ikonok {
+        font-size: 3.5rem;
+    }
+
+    #felugro_ablak_tartalom {
+        width: 28%;
+        height: 50%;
+        padding: 5% 3% 4% 3%;
+    }
+
+    /* #endregion */
+
+}
+
+
+/* #endregion */
+
+/**=========================     1700px-nél:    ========================*/
+/* #region   */
+
+
+@media screen and (min-width: 1700px) {
+    
+    /**===== második szekció beállításai: =====*/
+    /* #region második szekció beállításai:  */
+    #masodik_szekcio {
+        gap: 4rem;
+    }
+    
+    #masodik_szekcio_kozep {
+        gap: 2.5rem;
+    }
+    
+    /* #endregion */
+    
+    /**===== harmadik szekció beállításai: =====*/
+    #projektek_div .projekt_box {
+        width: 24%;
+    }
+
+    #projektek_div .projekt_kep {
+        height: 13rem;
+    }
+
+    #projektek_div .projekt_leiras {
+        width: 90%;
+    }
+
+    #projektek_div .projekt_link {
+        padding: 0.3rem 1.8rem;
+    }
+
+}
+
+/* #endregion */
+/* #endregion */
