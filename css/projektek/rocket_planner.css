@@ -129,7 +129,7 @@ a>.nyil_le {
     display: flex;
     flex-direction: column;
     gap: 0.8rem;
-    height: 100vh;
+    height: 100svh;
     position: relative;
 }
 
@@ -233,7 +233,7 @@ a>.nyil_le {
 /* #region  MÁSODIK SZEKCIÓ */
 #masodik_szekcio {
     padding: 2rem 1rem 8rem 1rem;
-    height: 100vh;
+    height: 100svh;
     display: flex;
     flex-direction: column;
     /* border: solid 1px red; */
@@ -368,7 +368,7 @@ a>.nyil_le {
     padding: 2rem 1rem 8rem 1rem;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 100svh;
     gap: 4rem;
     /* background-color: #bcd7ff; */
 }
@@ -464,7 +464,7 @@ a>.nyil_le {
     padding: 2rem 1rem 8rem 1rem;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 100svh;
     gap: 6rem;
 }
 
