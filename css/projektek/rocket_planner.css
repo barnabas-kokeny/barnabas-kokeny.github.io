@@ -63,7 +63,7 @@ body::-webkit-scrollbar-thumb:hover {
     align-items: center;
     justify-content: center;
     position: fixed;
-    height: 100vh;
+    height: 100svh;
     width: 100%;
     z-index: 100;
     background: var(--vilagos_betu_szin);
