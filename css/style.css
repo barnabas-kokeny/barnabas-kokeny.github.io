@@ -70,11 +70,11 @@ body {
 }
 
 .load {
-    border: 8px solid #d1d5dd;
+    border: 7px solid #d1d5dd;
     border-radius: 50%;
     border-right-color: #3f97e8;
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     animation: betoltes_animacio 2s ease infinite;
 }
 

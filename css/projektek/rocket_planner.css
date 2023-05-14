@@ -57,28 +57,25 @@ body::-webkit-scrollbar-thumb:hover {
 
 /**=============== betöltés ===============*/
 /* #region   */
+
 #betoltes {
-    border: 16px solid #f3f3f3;
-    border-top: 16px solid #3498db;
-    border-radius: 50%;
-    width: 120px;
-    height: 120px;
-    animation: spin 2s linear infinite;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -60px;
-    margin-left: -60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    z-index: 100;
+    background: var(--vilagos_betu_szin);
 }
 
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
+.load {
+    border: 7px solid #d1d5dd;
+    border-radius: 50%;
+    border-right-color: #3f97e8;
+    width: 60px;
+    height: 60px;
+    animation: betoltes_animacio 2s ease infinite;
 }
 
 /* #endregion */
