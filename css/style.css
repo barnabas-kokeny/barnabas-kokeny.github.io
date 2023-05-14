@@ -57,6 +57,7 @@ body {
 
 /**=============== betöltés ===============*/
 /* #region   */
+
 #betoltes {
     display: flex;
     align-items: center;
@@ -65,12 +66,27 @@ body {
     height: 100vh;
     width: 100%;
     z-index: 100;
-    background: #f0f2f7;
+    background: var(--vilagos_betu_szin);
 }
 
-.bx-loader-alt {
-    font-size: 50px;
-    color: #4d555e;
+.load {
+    border: 8px solid #d1d5dd;
+    border-radius: 50%;
+    border-right-color: #3f97e8;
+    width: 80px;
+    height: 80px;
+    animation: betoltes_animacio 2s ease infinite;
+}
+
+/* A forgó animáció */
+@keyframes betoltes_animacio {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 /* #endregion */
@@ -106,7 +122,7 @@ a>.nyil_le {
 
 /* #endregion */
 
-/*** =============================   telefon képernyő(360*740)       =========================*/
+/*** =============================   mobile first       =========================*/
 
 /*** ======================================================
 
@@ -192,6 +208,7 @@ a>.nyil_le {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    height: 100svh;
 }
 
 #masodik_szekcio_kozep {
@@ -304,7 +321,7 @@ a>.nyil_le {
     background: #f0f2f7;
     display: block;
     padding: calc(var(--fejlec_magassag)*1.5) 30px;
-    height: 100vh;
+    height: 100svh;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -421,10 +438,10 @@ a>.nyil_le {
   ** ======================================================*/
 
 /* #region  negyedik szekció  */
-#kapcsolat_szekcio {
+#negyedik_szekcio {
     position: relative;
     padding: 0 0;
-    height: 100vh;
+    height: 100svh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -564,7 +581,7 @@ textarea#message {
 
 #uzenetkuldes_form>input,
 textarea,
-#bt_kuldes {
+#btn_kuldes {
     width: 100%;
     padding: 2%;
     border-radius: 5px;
@@ -587,15 +604,14 @@ textarea:focus {
 
 /**===== küldés gomb =====*/
 /* #region  küldés gomb */
-#bt_kuldes {
+#btn_kuldes {
     background: #1454b4;
     color: rgb(255, 255, 255);
     border: none;
-    border-radius: 0px 10px 0px 10px;
     transition: all 0.3s;
 }
 
-#bt_kuldes:hover {
+#btn_kuldes:hover {
     background: #145ac4;
     cursor: pointer;
     transition: all 0.3s;
@@ -985,7 +1001,7 @@ textarea:focus {
     }
 
 
-    #kapcsolat_szekcio #kapcsolat_ikonok {
+    #negyedik_szekcio #kapcsolat_ikonok {
         font-size: 3.5rem;
     }
 
@@ -1007,19 +1023,19 @@ textarea:focus {
 
 
 @media screen and (min-width: 1700px) {
-    
+
     /**===== második szekció beállításai: =====*/
     /* #region második szekció beállításai:  */
     #masodik_szekcio {
         gap: 4rem;
     }
-    
+
     #masodik_szekcio_kozep {
         gap: 2.5rem;
     }
-    
+
     /* #endregion */
-    
+
     /**===== harmadik szekció beállításai: =====*/
     #projektek_div .projekt_box {
         width: 24%;

@@ -161,7 +161,7 @@
 
 /**===== negyedik szekció =====*/
 /* #region negyedik szekció  */
-.dark #kapcsolat_szekcio {
+.dark #negyedik_szekcio {
     background-size: 40px 40px;
     background-image: radial-gradient(circle, #393d41 1px, rgba(0, 0, 0, 0) 1px);
 }
