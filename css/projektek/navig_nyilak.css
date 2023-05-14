@@ -20,20 +20,18 @@
     font-size: 18px;
     color: var(--betuszin);
     background: white;
-    box-shadow: 1px 1.5px 5px #c0c4c9;
+    box-shadow: 0px 1px 5px #8a8e92;
     z-index: 10;
 }
 
 #vissza_fo_oldalra:hover {
-    box-shadow: 0px 1px 5px #9ea3a8 !important;
+    color: #1b97eb;
     transition-duration: 0.5s;
 }
 
 /**=============== Felnyíl ===============*/
-/* ======  ez szügseges ahhoz, hogy a fel nyíl jobb oldalt alul jelenjen meg a színés kövonallal:  ======= */
 #felnyil_div {
     position: fixed;
-    /* ez szabály fog érvényesülni a gyerek elemnél => "#fel_nyil" : */
     bottom: 40px;
     right: 30px;
 }
@@ -44,7 +42,6 @@
     font-size: 30px;
     color: #b7e1ff;
     background-color: #24292e !important;
-    /* a "#felnyil_div" szülő elemben beállított pozíció itt vehető észre*/
 }
 
 #fel_nyil::before {
